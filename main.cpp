@@ -35,25 +35,25 @@ int main(int argc, char** argv)
 			case '>':
 				if (tv.nextChannel() < nextChannel)
 				{
-					std::cout << " Channel: " << tv.nextChannel() << "/10" << std::endl;
+					std::cout << " Channel: " << tv.nextChannel() << "/" << nextChannel << std::endl;
 				}
 				break;
 			case '<':
 				if (tv.prevChannel() > prevChannel)
 				{
-					std::cout << " Channel: " << tv.prevChannel() << "/10" << std::endl;
+					std::cout << " Channel: " << tv.prevChannel() << "/" << nextChannel << std::endl;
 				}
 				break;
 			case '+':
 				if (tv.maxVolume() < maxVolume)
 				{
-					std::cout << " Volume: " << tv.maxVolume() << "/100" << std::endl;
+					std::cout << " Volume: " << tv.maxVolume() << "/" << maxVolume << std::endl;
 				}
 				break;
 			case '-':
 				if (tv.minVolume() > minVolume)
 				{
-					std::cout << " Volume: " << tv.minVolume() << "/100" << std::endl;
+					std::cout << " Volume: " << tv.minVolume() << "/" << maxVolume << std::endl;
 				}
 				break;
 			default:
